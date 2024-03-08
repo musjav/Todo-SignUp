@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined App</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Sign Up Section -->
+    <div id="signup-section" class="container">
+        <div class="logo">
+            <img src="https://via.placeholder.com/150" alt="Logo">
+        </div>
+        <form>
+            <h1>Sign Up</h1>
+            <div id="mesg"></div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button onclick="signUp(event)" type="button">Sign Up</button>
+        </form>
+        <div class="footer">
+            <p>Already have an account? <a href="#" onclick="showTodo()">Go to TODO</a></p>
+        </div>
+    </div><!-- TODO Section -->
+    <div id="todo-section" class="container">
+        <h1>To-DO</h1>
+        <!-- for putting element from java in div by giving classes and ids..enter btn eneter value from input and dlt btn delts all inputs-->
+        <input type="text" name="" id="inp">
+        <div id="msg"></div>
+        <button onclick="createELem(event)">Enter</button>
+        <button onclick="dltElem(event)">Delete All</button>
+        <div id="main"></div>
+    </div>
+    <script src="todo.js" type="module"></script>
+        <!-- <h1>TODO App</h1>
+    <input type="text" name="" id="inp">
+    <div id="msg"></div>
+    <button onclick="createElem()">Enter</button>
+    <button onclick="delTodo()">Delete All</button>
+    <div id="main"></div> -->
+        <!-- <button id="element">delete</button> -->
+
+
+
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            You can replace the following image URL with your own logo
+            <img src="https://via.placeholder.com/150" alt="Logo">
+        </div>
+        <form>
+            <h1>Sign In</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button onclick="signUp(event)" type="button">Sign In</button>
+        </form>
+        <div class="footer">
+            <p>New to our platform? <a href="#">Sign up here</a></p>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+
+</body>
+</html>-->
